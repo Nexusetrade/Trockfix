@@ -106,7 +106,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: 'Adresse',
-      content: 'Theodorerich Str. 8, 85051 Ingolstadt',
+      content: 'Theoderich Str. 8, 85051 Ingolstadt',
       href: 'https://www.google.com/maps/search/?api=1&query=Theodorerich+Str.+8,+85051+Ingolstadt',
       target: '_blank'
     },
