@@ -53,7 +53,7 @@ const BautrocknerverleihPage = () => {
         </div>
       </section>
 
-      {/* Main Content Area - Deep Topical Content */}
+      {/* Main Content Area */}
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-4xl">
           
@@ -135,58 +135,26 @@ const BautrocknerverleihPage = () => {
                 <p className="mb-8 text-gray-300">
                   Unser Hauptstandort in der <strong>Theoderichstraße 8, 85051 Ingolstadt</strong> ermöglicht es uns, 
                   besonders schnell bei Ihnen zu sein. Ein lokaler Ansprechpartner ist bei 
-                  Wasserschäden Gold wert. Neben Bautrocknerverleih Ingolstadt helfen wir auch bei allen anderen Herausforderungen rund um Wasser und Feuchtigkeit.
+                  Wasserschäden Gold wert.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-8 border-t border-gray-700 pt-8">
                   <div>
                     <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Unsere Kernleistungen</h4>
                     <ul className="space-y-3">
-                      <li>
-                        <Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung & Diagnose
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/wasserschadensanierung/schimmelsanierung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Schimmelentfernung
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/bautrocknung/estrichtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Estrichtrocknung
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/bautrocknung/neubautrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Neubautrocknung
-                        </Link>
-                      </li>
+                      <li><Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung & Diagnose</Link></li>
+                      <li><Link to="/wasserschadensanierung/schimmelsanierung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Schimmelentfernung</Link></li>
+                      <li><Link to="/bautrocknung/estrichtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Estrichtrocknung</Link></li>
+                      <li><Link to="/bautrocknung/neubautrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Neubautrocknung</Link></li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Lokale Einsatzgebiete</h4>
                     <ul className="space-y-3">
-                      <li>
-                        <Link to="/einzugsgebiet/gaimersheim" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Gaimersheim
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/manching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Manching
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/koesching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Kösching
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/haunwoehr" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Stadtteil Haunwöhr
-                        </Link>
-                      </li>
+                      <li><Link to="/einzugsgebiet/gaimersheim" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Gaimersheim</Link></li>
+                      <li><Link to="/einzugsgebiet/manching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Manching</Link></li>
+                      <li><Link to="/einzugsgebiet/koesching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Kösching</Link></li>
+                      <li><Link to="/einzugsgebiet/haunwoehr" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Haunwöhr</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -196,11 +164,22 @@ const BautrocknerverleihPage = () => {
             {/* FAQs */}
             <h2 className="text-3xl font-bold text-gray-900 mb-8 mt-20">Häufig gestellte Fragen (FAQ) zur Bautrocknerverleih</h2>
             <div className="space-y-6">
-               <div dangerouslySetInnerHTML={{ __html: `${faqs}` }} />
+
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Wie lange dauert eine professionelle Bautrocknerverleih?</h3>
+                <p className="text-gray-600">Abhängig von der Durchfeuchtung und den Materialien dauert eine Bautrocknerverleih in der Regel zwischen 10 und 21 Tagen. Wir überwachen den Prozess engmaschig mit Feuchtigkeitsmessungen.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Übernimmt die Versicherung die Kosten für Bautrocknerverleih?</h3>
+                <p className="text-gray-600">Bei Leitungswasserschäden greift meist die Gebäudeversicherung (für fest verbundene Teile) oder die Hausratversicherung (für bewegliche Einrichtung). Wir unterstützen Sie gerne bei der Dokumentation und direkten Abrechnung.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Können die Räume während der Bautrocknerverleih bewohnt werden?</h3>
+                <p className="text-gray-600">Ja, unsere modernen Trocknungsgeräte laufen relativ leise und sind zum Teil mit HEPA-Filtern ausgestattet, um die Raumluftqualität zu erhalten. Einschränkungen gibt es natürlich im direkten Schadensbereich.</p>
+              </div>
             </div>
 
           </div>
-
         </div>
       </section>
     </div>

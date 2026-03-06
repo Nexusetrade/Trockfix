@@ -53,7 +53,7 @@ const KothauPage = () => {
         </div>
       </section>
 
-      {/* Main Content Area - Deep Topical Content */}
+      {/* Main Content Area */}
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-4xl">
           
@@ -135,58 +135,26 @@ const KothauPage = () => {
                 <p className="mb-8 text-gray-300">
                   Unser Hauptstandort in der <strong>Theoderichstraße 8, 85051 Ingolstadt</strong> ermöglicht es uns, 
                   besonders schnell bei Ihnen zu sein. Ein lokaler Ansprechpartner ist bei 
-                  Wasserschäden Gold wert. Neben Wasserschadensanierung & Bautrocknung Kothau helfen wir auch bei allen anderen Herausforderungen rund um Wasser und Feuchtigkeit.
+                  Wasserschäden Gold wert.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-8 border-t border-gray-700 pt-8">
                   <div>
                     <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Unsere Kernleistungen</h4>
                     <ul className="space-y-3">
-                      <li>
-                        <Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung & Diagnose
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/wasserschadensanierung/schimmelsanierung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Schimmelentfernung
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/bautrocknung/estrichtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Estrichtrocknung
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/bautrocknung/neubautrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Neubautrocknung
-                        </Link>
-                      </li>
+                      <li><Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung & Diagnose</Link></li>
+                      <li><Link to="/wasserschadensanierung/schimmelsanierung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Schimmelentfernung</Link></li>
+                      <li><Link to="/bautrocknung/estrichtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Estrichtrocknung</Link></li>
+                      <li><Link to="/bautrocknung/neubautrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Neubautrocknung</Link></li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Lokale Einsatzgebiete</h4>
                     <ul className="space-y-3">
-                      <li>
-                        <Link to="/einzugsgebiet/gaimersheim" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Gaimersheim
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/manching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Manching
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/koesching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Kösching
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/haunwoehr" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Stadtteil Haunwöhr
-                        </Link>
-                      </li>
+                      <li><Link to="/einzugsgebiet/gaimersheim" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Gaimersheim</Link></li>
+                      <li><Link to="/einzugsgebiet/manching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Manching</Link></li>
+                      <li><Link to="/einzugsgebiet/koesching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Kösching</Link></li>
+                      <li><Link to="/einzugsgebiet/haunwoehr" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Haunwöhr</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -196,11 +164,22 @@ const KothauPage = () => {
             {/* FAQs */}
             <h2 className="text-3xl font-bold text-gray-900 mb-8 mt-20">Häufig gestellte Fragen (FAQ) zur Wasserschadensanierung & Bautrocknung</h2>
             <div className="space-y-6">
-               <div dangerouslySetInnerHTML={{ __html: `${faqs}` }} />
+
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Wie schnell sind Sie in Kothau vor Ort?</h3>
+                <p className="text-gray-600">Da wir lokal in Ingolstadt (Theoderichstraße 8) stationiert sind, erreichen wir Kothau in der Regel innerhalb kürzester Zeit, um Erstmaßnahmen bei Wasserschäden einzuleiten.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Bieten Sie auch Schimmelsanierung in Kothau an?</h3>
+                <p className="text-gray-600">Ja, die professionelle Entfernung von Schimmelpilzen gehört zu unseren Kernkompetenzen im gesamten Einzugsgebiet, einschließlich Kothau.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Rechnen Sie direkt mit meiner Versicherung ab?</h3>
+                <p className="text-gray-600">Ja, wir übernehmen auf Wunsch die komplette Kommunikation und Abrechnung mit Ihrer Gebäude- oder Hausratversicherung.</p>
+              </div>
             </div>
 
           </div>
-
         </div>
       </section>
     </div>

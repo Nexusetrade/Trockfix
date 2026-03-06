@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const srcDir = 'c:\\Users\\davin\\Desktop\\BM\\Client Work\\Website\\Trockfix\\horizons-export-91b7b105-0d69-4c5d-a724-d11e33552206\\src';
+const srcDir = path.join(__dirname, '..', 'src');
 const pagesDir = path.join(srcDir, 'pages');
 
 const pages = fs.readdirSync(pagesDir).filter(f => f.endsWith('Page.jsx') && f !== 'HomePage.jsx' && f !== 'LegalPages.jsx' && f !== 'ContactPage.jsx' && f !== 'DatenschutzPage.jsx' && f !== 'ImpressumPage.jsx');
@@ -13,49 +13,61 @@ function formatTitle(str) {
 
 for (let file of pages) {
     const filePath = path.join(pagesDir, file);
-    if (file !== 'HomePage.jsx') {
-        const pageName = file.replace('.jsx', '');
-        const niceName = formatTitle(file);
-        
-        let pathName = file.replace('Page.jsx', '').toLowerCase();
-        
-        let isLocation = pathName === 'gaimersheim' || pathName === 'koesching' || pathName === 'manching' || pathName === 'neuburg' || pathName === 'pfaffenhofen' || pathName === 'haunwoehr' || pathName === 'kothau' || pathName === 'ringsee' || pathName === 'friedrichshofen';
-        
-        let locationName = isLocation ? niceName : 'Ingolstadt';
-        let serviceName = isLocation ? 'Wasserschadensanierung & Bautrocknung' : niceName;
-        
-        let targetKeyword = serviceName + ' ' + locationName;
-        
-        let faqs = '';
-        if (isLocation) {
-            faqs = `
-               <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Wie schnell sind Sie in ${locationName} vor Ort?</h3>
-                  <p className="text-gray-600">Da wir lokal in Ingolstadt (Theoderichstraße 8) stationiert sind, erreichen wir ${locationName} in der Regel innerhalb kürzester Zeit, um Erstmaßnahmen bei Wasserschäden einzuleiten.</p>
-               </div>
-               <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Bieten Sie auch Schimmelsanierung in ${locationName} an?</h3>
-                  <p className="text-gray-600">Ja, die professionelle Entfernung von Schimmelpilzen gehört zu unseren Kernkompetenzen im gesamten Einzugsgebiet.</p>
-               </div>
-            `;
-        } else {
-             faqs = `
-               <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Wie lange dauert eine professionelle Trocknung im Durchschnitt?</h3>
-                  <p className="text-gray-600">Abhängig von der Durchfeuchtung und den Materialien dauert eine Bautrocknung in der Regel zwischen 10 und 21 Tagen. Wir überwachen den Prozess engmaschig mit Feuchtigkeitsmessungen.</p>
-               </div>
-               <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Übernimmt die Versicherung die Kosten für ${serviceName}?</h3>
-                  <p className="text-gray-600">Bei Leitungswasserschäden greift meist die Gebäudeversicherung (für fest verbundene Teile) oder die Hausratversicherung (für bewegliche Einrichtung). Wir unterstützen Sie gerne bei der Dokumentation und direkten Abrechnung.</p>
-               </div>
-               <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Können die Räume während der Trocknung bewohnt werden?</h3>
-                  <p className="text-gray-600">Ja, unsere modernen Trocknungsgeräte laufen relativ leise und sind zum Teil mit HEPA-Filtern ausgestattet, um die Raumluftqualität zu erhalten. Einschränkungen gibt es natürlich im direkten Schadensbereich.</p>
-               </div>
-            `;
-        }
-        
-        const template = `import React from 'react';
+    const pageName = file.replace('.jsx', '');
+    const niceName = formatTitle(file);
+    
+    let pathName = file.replace('Page.jsx', '').toLowerCase();
+    
+    const locationNames = {
+        gaimersheim: 'Gaimersheim',
+        koesching: 'Kösching',
+        manching: 'Manching',
+        neuburg: 'Neuburg a.d. Donau',
+        pfaffenhofen: 'Pfaffenhofen a.d. Ilm',
+        haunwoehr: 'Haunwöhr',
+        kothau: 'Kothau',
+        ringsee: 'Ringsee',
+        friedrichshofen: 'Friedrichshofen'
+    };
+    
+    let isLocation = locationNames.hasOwnProperty(pathName);
+    let locationName = isLocation ? locationNames[pathName] : 'Ingolstadt';
+    let serviceName = isLocation ? 'Wasserschadensanierung & Bautrocknung' : niceName;
+    let targetKeyword = serviceName + ' ' + locationName;
+    
+    // Build FAQ JSX directly as a string
+    let faqJSX = '';
+    if (isLocation) {
+        faqJSX = `
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Wie schnell sind Sie in ${locationName} vor Ort?</h3>
+                <p className="text-gray-600">Da wir lokal in Ingolstadt (Theoderichstraße 8) stationiert sind, erreichen wir ${locationName} in der Regel innerhalb kürzester Zeit, um Erstmaßnahmen bei Wasserschäden einzuleiten.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Bieten Sie auch Schimmelsanierung in ${locationName} an?</h3>
+                <p className="text-gray-600">Ja, die professionelle Entfernung von Schimmelpilzen gehört zu unseren Kernkompetenzen im gesamten Einzugsgebiet, einschließlich ${locationName}.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Rechnen Sie direkt mit meiner Versicherung ab?</h3>
+                <p className="text-gray-600">Ja, wir übernehmen auf Wunsch die komplette Kommunikation und Abrechnung mit Ihrer Gebäude- oder Hausratversicherung.</p>
+              </div>`;
+    } else {
+        faqJSX = `
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Wie lange dauert eine professionelle ${serviceName}?</h3>
+                <p className="text-gray-600">Abhängig von der Durchfeuchtung und den Materialien dauert eine ${serviceName} in der Regel zwischen 10 und 21 Tagen. Wir überwachen den Prozess engmaschig mit Feuchtigkeitsmessungen.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Übernimmt die Versicherung die Kosten für ${serviceName}?</h3>
+                <p className="text-gray-600">Bei Leitungswasserschäden greift meist die Gebäudeversicherung (für fest verbundene Teile) oder die Hausratversicherung (für bewegliche Einrichtung). Wir unterstützen Sie gerne bei der Dokumentation und direkten Abrechnung.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Können die Räume während der ${serviceName} bewohnt werden?</h3>
+                <p className="text-gray-600">Ja, unsere modernen Trocknungsgeräte laufen relativ leise und sind zum Teil mit HEPA-Filtern ausgestattet, um die Raumluftqualität zu erhalten. Einschränkungen gibt es natürlich im direkten Schadensbereich.</p>
+              </div>`;
+    }
+    
+    const template = `import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Shield, Clock, ThumbsUp, MapPin, CheckCircle, Droplets, Wrench, AlertTriangle, PhoneCall } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -110,7 +122,7 @@ const ${pageName} = () => {
         </div>
       </section>
 
-      {/* Main Content Area - Deep Topical Content */}
+      {/* Main Content Area */}
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-4xl">
           
@@ -192,58 +204,26 @@ const ${pageName} = () => {
                 <p className="mb-8 text-gray-300">
                   Unser Hauptstandort in der <strong>Theoderichstraße 8, 85051 Ingolstadt</strong> ermöglicht es uns, 
                   besonders schnell bei Ihnen zu sein. Ein lokaler Ansprechpartner ist bei 
-                  Wasserschäden Gold wert. Neben ${targetKeyword} helfen wir auch bei allen anderen Herausforderungen rund um Wasser und Feuchtigkeit.
+                  Wasserschäden Gold wert.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-8 border-t border-gray-700 pt-8">
                   <div>
                     <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Unsere Kernleistungen</h4>
                     <ul className="space-y-3">
-                      <li>
-                        <Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung & Diagnose
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/wasserschadensanierung/schimmelsanierung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Schimmelentfernung
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/bautrocknung/estrichtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Estrichtrocknung
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/bautrocknung/neubautrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Neubautrocknung
-                        </Link>
-                      </li>
+                      <li><Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung & Diagnose</Link></li>
+                      <li><Link to="/wasserschadensanierung/schimmelsanierung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Schimmelentfernung</Link></li>
+                      <li><Link to="/bautrocknung/estrichtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Estrichtrocknung</Link></li>
+                      <li><Link to="/bautrocknung/neubautrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Neubautrocknung</Link></li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Lokale Einsatzgebiete</h4>
                     <ul className="space-y-3">
-                      <li>
-                        <Link to="/einzugsgebiet/gaimersheim" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Gaimersheim
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/manching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Manching
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/koesching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Kösching
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/haunwoehr" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Stadtteil Haunwöhr
-                        </Link>
-                      </li>
+                      <li><Link to="/einzugsgebiet/gaimersheim" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Gaimersheim</Link></li>
+                      <li><Link to="/einzugsgebiet/manching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Manching</Link></li>
+                      <li><Link to="/einzugsgebiet/koesching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Kösching</Link></li>
+                      <li><Link to="/einzugsgebiet/haunwoehr" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Haunwöhr</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -253,11 +233,10 @@ const ${pageName} = () => {
             {/* FAQs */}
             <h2 className="text-3xl font-bold text-gray-900 mb-8 mt-20">Häufig gestellte Fragen (FAQ) zur ${serviceName}</h2>
             <div className="space-y-6">
-               <div dangerouslySetInnerHTML={{ __html: \`\${faqs}\` }} />
+${faqJSX}
             </div>
 
           </div>
-
         </div>
       </section>
     </div>
@@ -266,7 +245,8 @@ const ${pageName} = () => {
 
 export default ${pageName};
 `;
-        fs.writeFileSync(filePath, template);
-        console.log('Deep SEO Updated ' + filePath);
-    }
+    fs.writeFileSync(filePath, template);
+    console.log('Fixed: ' + file);
 }
+
+console.log('\\nAll pages regenerated successfully!');

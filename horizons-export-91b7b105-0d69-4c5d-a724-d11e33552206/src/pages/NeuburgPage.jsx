@@ -7,8 +7,8 @@ const NeuburgPage = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>BESTE Wasserschadensanierung & Bautrocknung Neuburg | Trockfix Bautrocknung | 24/7 Notdienst</title>
-        <meta name="description" content="Suchen Sie Fachleute für Wasserschadensanierung & Bautrocknung Neuburg? Trockfix ist Ihr zertifizierter Ansprechpartner vor Ort (Theoderichstraße 8, Ingolstadt). Schnelle Hilfe, faire Preise!" />
+        <title>BESTE Wasserschadensanierung & Bautrocknung Neuburg a.d. Donau | Trockfix Bautrocknung | 24/7 Notdienst</title>
+        <meta name="description" content="Suchen Sie Fachleute für Wasserschadensanierung & Bautrocknung Neuburg a.d. Donau? Trockfix ist Ihr zertifizierter Ansprechpartner vor Ort (Theoderichstraße 8, Ingolstadt). Schnelle Hilfe, faire Preise!" />
         <link rel="canonical" href="https://trockfix.de/neuburg" />
       </Helmet>
 
@@ -17,9 +17,9 @@ const NeuburgPage = () => {
         <div className="absolute inset-0 opacity-20 bg-[url('https://horizons-cdn.hostinger.com/91b7b105-0d69-4c5d-a724-d11e33552206/0ba420891c946c0f1a564c023bda42e3-QT2rQ.webp')] bg-cover bg-center mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <span className="text-[#00BCD4] font-bold tracking-wider uppercase text-sm mb-4 block">Zertifizierter Fachbetrieb</span>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Wasserschadensanierung & Bautrocknung Neuburg</h1>
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Wasserschadensanierung & Bautrocknung Neuburg a.d. Donau</h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light">
-            Ihre lokalen Experten für Wasserschadensanierung & Bautrocknung direkt in Neuburg. Schnell vor Ort, wenn jede Minute zählt.
+            Ihre lokalen Experten für Wasserschadensanierung & Bautrocknung direkt in Neuburg a.d. Donau. Schnell vor Ort, wenn jede Minute zählt.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
             <a href="tel:01713498807" className="bg-[#00BCD4] hover:bg-[#00ACC1] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center transition-all shadow-lg hover:shadow-[#00BCD4]/50 hover:-translate-y-1">
@@ -39,7 +39,7 @@ const NeuburgPage = () => {
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center flex-col md:flex-row">
             <div className="flex items-center text-gray-700 font-medium">
               <MapPin className="text-[#00BCD4] w-6 h-6 mr-3" />
-              <span>Lokale Präsenz in Neuburg</span>
+              <span>Lokale Präsenz in Neuburg a.d. Donau</span>
             </div>
             <div className="flex items-center text-gray-700 font-medium">
               <CheckCircle className="text-[#00BCD4] w-6 h-6 mr-3" />
@@ -53,34 +53,34 @@ const NeuburgPage = () => {
         </div>
       </section>
 
-      {/* Main Content Area - Deep Topical Content */}
+      {/* Main Content Area */}
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-4xl">
           
           <div className="prose prose-lg md:prose-xl max-w-none text-gray-600 leading-relaxed">
             
             <h2 className="text-3xl font-extrabold text-gray-900 mb-8 border-b-2 border-[#00BCD4] pb-2 inline-block">
-              Fachgerechte Wasserschadensanierung & Bautrocknung in Neuburg
+              Fachgerechte Wasserschadensanierung & Bautrocknung in Neuburg a.d. Donau
             </h2>
             
             <p className="mb-6 font-medium text-gray-700 text-xl">
-              Wenn Sie in Neuburg und Umgebung ein Problem im Bereich Wasserschadensanierung & Bautrocknung haben, 
+              Wenn Sie in Neuburg a.d. Donau und Umgebung ein Problem im Bereich Wasserschadensanierung & Bautrocknung haben, 
               ist schnelles und professionelles Handeln gefragt. Die Trockfix Bautrocknung ist Ihr 
               TÜV-zertifizierter Partner direkt aus der Region.
             </p>
 
             <p className="mb-8">
               Ein Leitungswasserschaden, Schimmelbefall oder feuchte Wände können die 
-              Bausubstanz Ihrer Immobilie massiv gefährden. Als Spezialisten für Wasserschadensanierung & Bautrocknung Neuburg 
+              Bausubstanz Ihrer Immobilie massiv gefährden. Als Spezialisten für Wasserschadensanierung & Bautrocknung Neuburg a.d. Donau 
               verfügen wir über modernste Messtechnik, Hochleistungs-Trocknungsgeräte (Kondenstrockner, 
               Adsorptionstrockner) und das nötige Know-how, um Folgeschäden effektiv zu minimieren. 
-              Wir begleiten Sie in Neuburg vom ersten Schadensbericht bis zur fertigen Sanierung.
+              Wir begleiten Sie in Neuburg a.d. Donau vom ersten Schadensbericht bis zur fertigen Sanierung.
             </p>
 
             <div className="bg-[#f8fcfe] border border-[#e1f5fe] p-8 rounded-2xl my-12 shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <AlertTriangle className="text-amber-500 w-8 h-8 mr-3" />
-                Unser Versprechen an Sie in Neuburg:
+                Unser Versprechen an Sie in Neuburg a.d. Donau:
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -102,7 +102,7 @@ const NeuburgPage = () => {
               Ablauf der Wasserschadensanierung & Bautrocknung
             </h2>
             <p className="mb-8">
-              Unser strukturierter Prozess in Neuburg garantiert maximale Effizienz und Sicherheit für Ihr Gebäude:
+              Unser strukturierter Prozess in Neuburg a.d. Donau garantiert maximale Effizienz und Sicherheit für Ihr Gebäude:
             </p>
             
             <div className="space-y-8 pl-4 border-l-4 border-gray-200 ml-4 mb-16">
@@ -130,63 +130,31 @@ const NeuburgPage = () => {
               </div>
               <div className="relative z-10">
                 <h3 className="text-2xl md:text-3xl font-bold mb-6">
-                  Wir sind für Sie da – in Neuburg und der gesamten Region!
+                  Wir sind für Sie da – in Neuburg a.d. Donau und der gesamten Region!
                 </h3>
                 <p className="mb-8 text-gray-300">
                   Unser Hauptstandort in der <strong>Theoderichstraße 8, 85051 Ingolstadt</strong> ermöglicht es uns, 
                   besonders schnell bei Ihnen zu sein. Ein lokaler Ansprechpartner ist bei 
-                  Wasserschäden Gold wert. Neben Wasserschadensanierung & Bautrocknung Neuburg helfen wir auch bei allen anderen Herausforderungen rund um Wasser und Feuchtigkeit.
+                  Wasserschäden Gold wert.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-8 border-t border-gray-700 pt-8">
                   <div>
                     <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Unsere Kernleistungen</h4>
                     <ul className="space-y-3">
-                      <li>
-                        <Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung & Diagnose
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/wasserschadensanierung/schimmelsanierung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Schimmelentfernung
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/bautrocknung/estrichtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Estrichtrocknung
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/bautrocknung/neubautrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Neubautrocknung
-                        </Link>
-                      </li>
+                      <li><Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung & Diagnose</Link></li>
+                      <li><Link to="/wasserschadensanierung/schimmelsanierung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Schimmelentfernung</Link></li>
+                      <li><Link to="/bautrocknung/estrichtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Estrichtrocknung</Link></li>
+                      <li><Link to="/bautrocknung/neubautrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Neubautrocknung</Link></li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Lokale Einsatzgebiete</h4>
                     <ul className="space-y-3">
-                      <li>
-                        <Link to="/einzugsgebiet/gaimersheim" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Gaimersheim
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/manching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Manching
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/koesching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Einsatzgebiet Kösching
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/einzugsgebiet/haunwoehr" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center">
-                          <span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Stadtteil Haunwöhr
-                        </Link>
-                      </li>
+                      <li><Link to="/einzugsgebiet/gaimersheim" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Gaimersheim</Link></li>
+                      <li><Link to="/einzugsgebiet/manching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Manching</Link></li>
+                      <li><Link to="/einzugsgebiet/koesching" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Kösching</Link></li>
+                      <li><Link to="/einzugsgebiet/haunwoehr" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Haunwöhr</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -196,11 +164,22 @@ const NeuburgPage = () => {
             {/* FAQs */}
             <h2 className="text-3xl font-bold text-gray-900 mb-8 mt-20">Häufig gestellte Fragen (FAQ) zur Wasserschadensanierung & Bautrocknung</h2>
             <div className="space-y-6">
-               <div dangerouslySetInnerHTML={{ __html: `${faqs}` }} />
+
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Wie schnell sind Sie in Neuburg a.d. Donau vor Ort?</h3>
+                <p className="text-gray-600">Da wir lokal in Ingolstadt (Theoderichstraße 8) stationiert sind, erreichen wir Neuburg a.d. Donau in der Regel innerhalb kürzester Zeit, um Erstmaßnahmen bei Wasserschäden einzuleiten.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Bieten Sie auch Schimmelsanierung in Neuburg a.d. Donau an?</h3>
+                <p className="text-gray-600">Ja, die professionelle Entfernung von Schimmelpilzen gehört zu unseren Kernkompetenzen im gesamten Einzugsgebiet, einschließlich Neuburg a.d. Donau.</p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Rechnen Sie direkt mit meiner Versicherung ab?</h3>
+                <p className="text-gray-600">Ja, wir übernehmen auf Wunsch die komplette Kommunikation und Abrechnung mit Ihrer Gebäude- oder Hausratversicherung.</p>
+              </div>
             </div>
 
           </div>
-
         </div>
       </section>
     </div>
