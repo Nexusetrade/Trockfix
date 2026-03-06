@@ -88,8 +88,8 @@ const Header = () => {
 
   return (
     <header
-      className={\`fixed top-0 left-0 right-0 z-50 transition-all duration-300 \${isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
-        }\`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
+        }`}
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
@@ -121,7 +121,7 @@ const Header = () => {
                     <button className="flex items-center gap-1 text-sm font-medium text-gray-700 hover:text-[#00BCD4] py-2 transition-colors">
                       {item.label} <ChevronDown className="w-4 h-4" />
                     </button>
-                    <div className={\`absolute left-0 top-full pt-2 transition-all duration-300 w-56 \${activeDropdown === item.id ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'}\`}>
+                    <div className={`absolute left-0 top-full pt-2 transition-all duration-300 w-56 ${activeDropdown === item.id ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'}`}>
                        <div className="bg-white rounded-lg shadow-xl border border-gray-100 py-2">
                           {item.subItems.map((sub, i) => (
                              <Link key={i} to={sub.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#00BCD4] transition-colors">
@@ -136,7 +136,7 @@ const Header = () => {
 
               const isActive =
                 (item.href === location.pathname) ||
-                (item.type === 'hash' && location.pathname === '/' && location.hash === \`#\${item.href.split('#')[1]}\`);
+                (item.type === 'hash' && location.pathname === '/' && location.hash === `#${item.href.split('#')[1]}`);
 
               return (
                 <motion.li
@@ -148,12 +148,12 @@ const Header = () => {
                   <a
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item)}
-                    className={\`text-sm font-medium transition-colors relative group py-2 \${isActive ? 'text-[#00BCD4]' : 'text-gray-700 hover:text-[#00BCD4]'
-                      }\`}
+                    className={`text-sm font-medium transition-colors relative group py-2 ${isActive ? 'text-[#00BCD4]' : 'text-gray-700 hover:text-[#00BCD4]'
+                      }`}
                   >
                     {item.label}
-                    <span className={\`absolute bottom-1 left-0 h-0.5 bg-[#00BCD4] transition-all duration-300 \${isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                      }\`}></span>
+                    <span className={`absolute bottom-1 left-0 h-0.5 bg-[#00BCD4] transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                      }`}></span>
                   </a>
                 </motion.li>
               );
