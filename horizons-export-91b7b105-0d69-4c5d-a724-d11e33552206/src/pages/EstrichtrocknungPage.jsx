@@ -196,7 +196,7 @@ const EstrichtrocknungPage = () => {
             {/* FAQs */}
             <h2 className="text-3xl font-bold text-gray-900 mb-8 mt-20">Häufig gestellte Fragen (FAQ) zur Estrichtrocknung</h2>
             <div className="space-y-6">
-               <div dangerouslySetInnerHTML={{ __html: faqs }} />
+               <div dangerouslySetInnerHTML={{ __html: `${faqs}` }} />
             </div>
 
           </div>
