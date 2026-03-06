@@ -3,13 +3,13 @@ import { Helmet } from 'react-helmet';
 import { Shield, Clock, ThumbsUp, MapPin, CheckCircle, Droplets, Wrench, AlertTriangle, PhoneCall } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const KoeschingPage = () => {
+const KothauPage = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>BESTE Wasserschadensanierung & Bautrocknung Koesching | Trockfix Bautrocknung | 24/7 Notdienst</title>
-        <meta name="description" content="Suchen Sie Fachleute für Wasserschadensanierung & Bautrocknung Koesching? Trockfix ist Ihr zertifizierter Ansprechpartner vor Ort (Theoderichstraße 8, Ingolstadt). Schnelle Hilfe, faire Preise!" />
-        <link rel="canonical" href="https://trockfix.de/koesching" />
+        <title>BESTE Wasserschadensanierung & Bautrocknung Kothau | Trockfix Bautrocknung | 24/7 Notdienst</title>
+        <meta name="description" content="Suchen Sie Fachleute für Wasserschadensanierung & Bautrocknung Kothau? Trockfix ist Ihr zertifizierter Ansprechpartner vor Ort (Theoderichstraße 8, Ingolstadt). Schnelle Hilfe, faire Preise!" />
+        <link rel="canonical" href="https://trockfix.de/kothau" />
       </Helmet>
 
       {/* Hero Section */}
@@ -17,9 +17,9 @@ const KoeschingPage = () => {
         <div className="absolute inset-0 opacity-20 bg-[url('https://horizons-cdn.hostinger.com/91b7b105-0d69-4c5d-a724-d11e33552206/0ba420891c946c0f1a564c023bda42e3-QT2rQ.webp')] bg-cover bg-center mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <span className="text-[#00BCD4] font-bold tracking-wider uppercase text-sm mb-4 block">Zertifizierter Fachbetrieb</span>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Wasserschadensanierung & Bautrocknung Koesching</h1>
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Wasserschadensanierung & Bautrocknung Kothau</h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light">
-            Ihre lokalen Experten für Wasserschadensanierung & Bautrocknung direkt in Koesching. Schnell vor Ort, wenn jede Minute zählt.
+            Ihre lokalen Experten für Wasserschadensanierung & Bautrocknung direkt in Kothau. Schnell vor Ort, wenn jede Minute zählt.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
             <a href="tel:01713498807" className="bg-[#00BCD4] hover:bg-[#00ACC1] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center transition-all shadow-lg hover:shadow-[#00BCD4]/50 hover:-translate-y-1">
@@ -39,7 +39,7 @@ const KoeschingPage = () => {
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center flex-col md:flex-row">
             <div className="flex items-center text-gray-700 font-medium">
               <MapPin className="text-[#00BCD4] w-6 h-6 mr-3" />
-              <span>Lokale Präsenz in Koesching</span>
+              <span>Lokale Präsenz in Kothau</span>
             </div>
             <div className="flex items-center text-gray-700 font-medium">
               <CheckCircle className="text-[#00BCD4] w-6 h-6 mr-3" />
@@ -60,27 +60,27 @@ const KoeschingPage = () => {
           <div className="prose prose-lg md:prose-xl max-w-none text-gray-600 leading-relaxed">
             
             <h2 className="text-3xl font-extrabold text-gray-900 mb-8 border-b-2 border-[#00BCD4] pb-2 inline-block">
-              Fachgerechte Wasserschadensanierung & Bautrocknung in Koesching
+              Fachgerechte Wasserschadensanierung & Bautrocknung in Kothau
             </h2>
             
             <p className="mb-6 font-medium text-gray-700 text-xl">
-              Wenn Sie in Koesching und Umgebung ein Problem im Bereich Wasserschadensanierung & Bautrocknung haben, 
+              Wenn Sie in Kothau und Umgebung ein Problem im Bereich Wasserschadensanierung & Bautrocknung haben, 
               ist schnelles und professionelles Handeln gefragt. Die Trockfix Bautrocknung ist Ihr 
               TÜV-zertifizierter Partner direkt aus der Region.
             </p>
 
             <p className="mb-8">
               Ein Leitungswasserschaden, Schimmelbefall oder feuchte Wände können die 
-              Bausubstanz Ihrer Immobilie massiv gefährden. Als Spezialisten für Wasserschadensanierung & Bautrocknung Koesching 
+              Bausubstanz Ihrer Immobilie massiv gefährden. Als Spezialisten für Wasserschadensanierung & Bautrocknung Kothau 
               verfügen wir über modernste Messtechnik, Hochleistungs-Trocknungsgeräte (Kondenstrockner, 
               Adsorptionstrockner) und das nötige Know-how, um Folgeschäden effektiv zu minimieren. 
-              Wir begleiten Sie in Koesching vom ersten Schadensbericht bis zur fertigen Sanierung.
+              Wir begleiten Sie in Kothau vom ersten Schadensbericht bis zur fertigen Sanierung.
             </p>
 
             <div className="bg-[#f8fcfe] border border-[#e1f5fe] p-8 rounded-2xl my-12 shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <AlertTriangle className="text-amber-500 w-8 h-8 mr-3" />
-                Unser Versprechen an Sie in Koesching:
+                Unser Versprechen an Sie in Kothau:
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -102,7 +102,7 @@ const KoeschingPage = () => {
               Ablauf der Wasserschadensanierung & Bautrocknung
             </h2>
             <p className="mb-8">
-              Unser strukturierter Prozess in Koesching garantiert maximale Effizienz und Sicherheit für Ihr Gebäude:
+              Unser strukturierter Prozess in Kothau garantiert maximale Effizienz und Sicherheit für Ihr Gebäude:
             </p>
             
             <div className="space-y-8 pl-4 border-l-4 border-gray-200 ml-4 mb-16">
@@ -130,12 +130,12 @@ const KoeschingPage = () => {
               </div>
               <div className="relative z-10">
                 <h3 className="text-2xl md:text-3xl font-bold mb-6">
-                  Wir sind für Sie da – in Koesching und der gesamten Region!
+                  Wir sind für Sie da – in Kothau und der gesamten Region!
                 </h3>
                 <p className="mb-8 text-gray-300">
                   Unser Hauptstandort in der <strong>Theoderichstraße 8, 85051 Ingolstadt</strong> ermöglicht es uns, 
                   besonders schnell bei Ihnen zu sein. Ein lokaler Ansprechpartner ist bei 
-                  Wasserschäden Gold wert. Neben Wasserschadensanierung & Bautrocknung Koesching helfen wir auch bei allen anderen Herausforderungen rund um Wasser und Feuchtigkeit.
+                  Wasserschäden Gold wert. Neben Wasserschadensanierung & Bautrocknung Kothau helfen wir auch bei allen anderen Herausforderungen rund um Wasser und Feuchtigkeit.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-8 border-t border-gray-700 pt-8">
@@ -207,4 +207,4 @@ const KoeschingPage = () => {
   );
 };
 
-export default KoeschingPage;
+export default KothauPage;

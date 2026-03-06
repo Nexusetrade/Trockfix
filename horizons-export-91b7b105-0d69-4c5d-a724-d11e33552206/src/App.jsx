@@ -42,6 +42,10 @@ import KoeschingPage from '@/pages/KoeschingPage';
 import ManchingPage from '@/pages/ManchingPage';
 import NeuburgPage from '@/pages/NeuburgPage';
 import PfaffenhofenPage from '@/pages/PfaffenhofenPage';
+import HaunwoehrPage from '@/pages/HaunwoehrPage';
+import KothauPage from '@/pages/KothauPage';
+import RingseePage from '@/pages/RingseePage';
+import FriedrichshofenPage from '@/pages/FriedrichshofenPage';
 
 // Standard Pages
 import KontaktPage from '@/pages/KontaktPage';
@@ -54,9 +58,28 @@ function App() {
       <Router>
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
           <Helmet>
-						<title>BESTE Wasserschadensanierung Ingolstadt | Bautrocknung & Notdienst 24/7 in meiner Nähe</title>
-            <meta name="description" content="TrockFix ist Ihr zuverlässiger Partner für Bautrocknung & Wasserschadensanierung in Ingolstadt. 24/7 Notdienst. Jetzt anrufen!" />
+            <title>BESTE Wasserschadensanierung Ingolstadt | Trockfix Bautrocknung | Sanierung in meiner Nähe</title>
+            <meta name="description" content="Trockfix ist Ihr zuverlässiger Experten-Partner für Bautrocknung & Wasserschadensanierung in Ingolstadt und Umgebung. Fachgerecht, schnell und transparent." />
             <link rel="canonical" href="https://trockfix.de/" />
+            <script type="application/ld+json">
+              {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "LocalBusiness",
+                  "name": "Trockfix Bautrocknung & Wasserschadensanierung",
+                  "url": "https://trockfix.de/",
+                  "telephone": "0171 3498807",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Theoderichstraße 8",
+                    "addressLocality": "Ingolstadt",
+                    "postalCode": "85051",
+                    "addressCountry": "DE"
+                  },
+                  "areaServed": "Ingolstadt und Umgebung"
+                }
+              `}
+            </script>
           </Helmet>
           
           <ScrollToTop />
@@ -98,6 +121,10 @@ function App() {
               <Route path="/einzugsgebiet/manching" element={<ManchingPage />} />
               <Route path="/einzugsgebiet/neuburg-donau" element={<NeuburgPage />} />
               <Route path="/einzugsgebiet/pfaffenhofen" element={<PfaffenhofenPage />} />
+              <Route path="/einzugsgebiet/haunwoehr" element={<HaunwoehrPage />} />
+              <Route path="/einzugsgebiet/kothau" element={<KothauPage />} />
+              <Route path="/einzugsgebiet/ringsee" element={<RingseePage />} />
+              <Route path="/einzugsgebiet/friedrichshofen" element={<FriedrichshofenPage />} />
               
               {/* Standard Pages */}
               <Route path="/kontakt" element={<KontaktPage />} />
