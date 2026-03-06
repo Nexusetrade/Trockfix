@@ -9,7 +9,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const handleLinkClick = (hash) => {
-     navigate(\`/legal#\${hash}\`);
+     navigate(`/legal#${hash}`);
   };
 
   return (
