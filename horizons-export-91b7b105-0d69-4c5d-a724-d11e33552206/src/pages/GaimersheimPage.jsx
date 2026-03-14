@@ -28,7 +28,7 @@ const GaimersheimPage = () => {
       <section className="py-8 bg-gray-50 border-b border-gray-100">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center flex-col md:flex-row">
-            <div className="flex items-center text-gray-700 font-medium"><MapPin className="text-[#00BCD4] w-6 h-6 mr-3" /><span>< 15 Min. Anfahrt</span></div>
+            <div className="flex items-center text-gray-700 font-medium"><MapPin className="text-[#00BCD4] w-6 h-6 mr-3" /><span>Unter 15 Min. Anfahrt</span></div>
             <div className="flex items-center text-gray-700 font-medium"><CheckCircle className="text-[#00BCD4] w-6 h-6 mr-3" /><span>Ortskenntnis Gaimersheim</span></div>
             <div className="flex items-center text-gray-700 font-medium"><Clock className="text-[#00BCD4] w-6 h-6 mr-3" /><span>24/7 Erreichbar</span></div>
           </div>
