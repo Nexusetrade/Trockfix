@@ -1,33 +1,33 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Shield, Clock, ThumbsUp, MapPin, CheckCircle, Droplets, Wrench, AlertTriangle, PhoneCall } from 'lucide-react';
+import { Shield, Clock, MapPin, CheckCircle, Wrench, PhoneCall, AlertTriangle, Bug, Thermometer, Wind } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const SchimmelsanierungPage = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>BESTE Schimmelsanierung Ingolstadt | Trockfix Bautrocknung | 24/7 Notdienst</title>
-        <meta name="description" content="Suchen Sie Fachleute für Schimmelsanierung Ingolstadt? Trockfix ist Ihr zertifizierter Ansprechpartner vor Ort (Theoderichstraße 8, Ingolstadt). Schnelle Hilfe, faire Preise!" />
+        <title>Schimmelsanierung Ingolstadt | Trockfix | Professionelle Schimmelentfernung</title>
+        <meta name="description" content="Schimmel in der Wohnung? Trockfix bietet professionelle Schimmelsanierung in Ingolstadt – mit Ursachenanalyse, Sporentest und nachhaltiger Beseitigung. TÜV-zertifiziert." />
         <link rel="canonical" href="https://trockfix.de/schimmelsanierung" />
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#1a2a3a] to-[#0f172a] text-white py-24 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#1a2a1a] to-[#0f2a0f] text-white py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[url('https://horizons-cdn.hostinger.com/91b7b105-0d69-4c5d-a724-d11e33552206/0ba420891c946c0f1a564c023bda42e3-QT2rQ.webp')] bg-cover bg-center mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <span className="text-[#00BCD4] font-bold tracking-wider uppercase text-sm mb-4 block">Zertifizierter Fachbetrieb</span>
+          <span className="text-[#4CAF50] font-bold tracking-wider uppercase text-sm mb-4 block">Gesundheitsschutz & Prävention</span>
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Schimmelsanierung Ingolstadt</h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light">
-            Ihre lokalen Experten für Schimmelsanierung direkt in Ingolstadt. Schnell vor Ort, wenn jede Minute zählt.
+            Schimmel erkennen, Ursache beseitigen und nachhaltig sanieren – für ein gesundes Raumklima.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
             <a href="tel:01713498807" className="bg-[#00BCD4] hover:bg-[#00ACC1] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center transition-all shadow-lg hover:shadow-[#00BCD4]/50 hover:-translate-y-1">
               <PhoneCall className="w-5 h-5 mr-2 animate-pulse" />
-              Notdienst anrufen
+              Beratung anfordern
             </a>
             <Link to="/kontakt" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-full font-bold text-lg transition-all">
-              Kostenlose Beratung
+              Schimmelcheck buchen
             </Link>
           </div>
         </div>
@@ -38,16 +38,16 @@ const SchimmelsanierungPage = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center flex-col md:flex-row">
             <div className="flex items-center text-gray-700 font-medium">
-              <MapPin className="text-[#00BCD4] w-6 h-6 mr-3" />
-              <span>Lokale Präsenz in Ingolstadt</span>
+              <Bug className="text-[#4CAF50] w-6 h-6 mr-3" />
+              <span>Sporenanalyse & Labortest</span>
             </div>
             <div className="flex items-center text-gray-700 font-medium">
-              <CheckCircle className="text-[#00BCD4] w-6 h-6 mr-3" />
-              <span>Direkte Versicherungsabwicklung</span>
+              <CheckCircle className="text-[#4CAF50] w-6 h-6 mr-3" />
+              <span>Ursachenbeseitigung statt Symptombehandlung</span>
             </div>
             <div className="flex items-center text-gray-700 font-medium">
-              <Clock className="text-[#00BCD4] w-6 h-6 mr-3" />
-              <span>24/7 Erreichbarkeit</span>
+              <Shield className="text-[#4CAF50] w-6 h-6 mr-3" />
+              <span>TÜV-zertifizierter Fachbetrieb</span>
             </div>
           </div>
         </div>
@@ -59,93 +59,109 @@ const SchimmelsanierungPage = () => {
           
           <div className="prose prose-lg md:prose-xl max-w-none text-gray-600 leading-relaxed">
             
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-8 border-b-2 border-[#00BCD4] pb-2 inline-block">
-              Fachgerechte Schimmelsanierung in Ingolstadt
+            <h2 className="text-3xl font-extrabold text-gray-900 mb-8 border-b-2 border-[#4CAF50] pb-2 inline-block">
+              Schimmelpilz – ein Gesundheitsrisiko, das man ernst nehmen muss
             </h2>
             
             <p className="mb-6 font-medium text-gray-700 text-xl">
-              Wenn Sie in Ingolstadt und Umgebung ein Problem im Bereich Schimmelsanierung haben, 
-              ist schnelles und professionelles Handeln gefragt. Die Trockfix Bautrocknung ist Ihr 
-              TÜV-zertifizierter Partner direkt aus der Region.
+              Schimmel in Wohnräumen ist weit mehr als ein optisches Problem. 
+              Die Sporen von Schimmelpilzen wie <em>Aspergillus</em>, <em>Cladosporium</em> oder 
+              dem gefürchteten <em>Stachybotrys</em> (Schwarzschimmel) können Atemwegserkrankungen, 
+              Allergien und chronische Beschwerden auslösen – besonders bei Kindern, 
+              Senioren und immungeschwächten Personen.
             </p>
 
             <p className="mb-8">
-              Ein Leitungswasserschaden, Schimmelbefall oder feuchte Wände können die 
-              Bausubstanz Ihrer Immobilie massiv gefährden. Als Spezialisten für Schimmelsanierung Ingolstadt 
-              verfügen wir über modernste Messtechnik, Hochleistungs-Trocknungsgeräte (Kondenstrockner, 
-              Adsorptionstrockner) und das nötige Know-how, um Folgeschäden effektiv zu minimieren. 
-              Wir begleiten Sie in Ingolstadt vom ersten Schadensbericht bis zur fertigen Sanierung.
+              Die häufigsten Ursachen für Schimmelbefall sind <strong>Feuchteschäden nach 
+              Wasserschäden</strong>, unzureichende Belüftung, Wärmebrücken in der Gebäudehülle 
+              oder defekte Abdichtungen. Entscheidend ist: Wer nur den sichtbaren 
+              Schimmel überstreicht oder abwischt, behandelt lediglich das Symptom. 
+              Der Pilz wächst unter der Oberfläche weiter und verschlimmert sich.
             </p>
 
-            <div className="bg-[#f8fcfe] border border-[#e1f5fe] p-8 rounded-2xl my-12 shadow-sm">
+            <p className="mb-8">
+              Bei einer professionellen Schimmelsanierung gehen wir der <strong>Ursache auf 
+              den Grund</strong>. Mittels Feuchtigkeitsmessung und ggf. Thermografie identifizieren 
+              wir die Feuchtigkeitsquelle. Auf Wunsch nehmen wir Proben zur 
+              <strong> Laboranalyse</strong>, um die Schimmelart und die Sporenbelastung in der 
+              Raumluft genau zu bestimmen. Erst dann erfolgt die fachgerechte 
+              Sanierung – mit HEPA-Filtern, Abschottung und biozider Behandlung.
+            </p>
+
+            <div className="bg-[#f0fdf4] border border-[#bbf7d0] p-8 rounded-2xl my-12 shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <AlertTriangle className="text-amber-500 w-8 h-8 mr-3" />
-                Unser Versprechen an Sie in Ingolstadt:
+                Wann ist eine professionelle Schimmelsanierung nötig?
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <Shield className="w-6 h-6 text-[#00BCD4] mr-3 shrink-0 mt-1" />
-                  <span><strong>100% Kostentransparenz:</strong> Sie erhalten vorab einen detaillierten Plan für die Schimmelsanierung.</span>
+                  <Bug className="w-6 h-6 text-[#4CAF50] mr-3 shrink-0 mt-1" />
+                  <span><strong>Sichtbarer Befall über 0,5 m²:</strong> Ab dieser Fläche empfiehlt das Umweltbundesamt die Sanierung durch einen Fachbetrieb – Eigenmaßnahmen reichen nicht mehr aus.</span>
                 </li>
                 <li className="flex items-start">
-                  <Droplets className="w-6 h-6 text-[#00BCD4] mr-3 shrink-0 mt-1" />
-                  <span><strong>Moderne Verfahren:</strong> Zerstörungsfreie Methoden (z.B. bei der Leckortung oder Dämmschichttrocknung) wo immer möglich.</span>
+                  <Thermometer className="w-6 h-6 text-[#4CAF50] mr-3 shrink-0 mt-1" />
+                  <span><strong>Modriger Geruch ohne sichtbaren Schimmel:</strong> Verdeckter Schimmel hinter Verkleidungen, in Hohlräumen oder unter Estrich ist besonders gefährlich und erfordert eine professionelle Ortung.</span>
                 </li>
                 <li className="flex items-start">
-                  <Wrench className="w-6 h-6 text-[#00BCD4] mr-3 shrink-0 mt-1" />
-                  <span><strong>Komplettservice:</strong> Wir messen, trocknen, sanieren und rechnen – auf Wunsch – direkt mit der Hausrat- oder Wohngebäudeversicherung ab.</span>
+                  <Wind className="w-6 h-6 text-[#4CAF50] mr-3 shrink-0 mt-1" />
+                  <span><strong>Wiederkehrender Schimmel nach eigener Reinigung:</strong> Wenn der Schimmel nach dem Putzen immer wiederkommt, wurde die Ursache nicht beseitigt – genau hier setzen wir an.</span>
                 </li>
               </ul>
             </div>
 
             <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">
-              Ablauf der Schimmelsanierung
+              Unser Sanierungsablauf bei Schimmelbefall
             </h2>
             <p className="mb-8">
-              Unser strukturierter Prozess in Ingolstadt garantiert maximale Effizienz und Sicherheit für Ihr Gebäude:
+              Jede Schimmelsanierung folgt einem strengen Hygieneprotokoll:
             </p>
             
-            <div className="space-y-8 pl-4 border-l-4 border-gray-200 ml-4 mb-16">
+            <div className="space-y-8 pl-4 border-l-4 border-[#4CAF50]/30 ml-4 mb-16">
               <div className="relative">
-                <div className="absolute -left-[27px] bg-[#00BCD4] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2 ml-6">Schadensaufnahme & Analyse</h4>
-                <p className="ml-6 text-gray-600">Mittels Feuchtigkeitsmessung und ggf. Thermografie lokalisieren wir den Kern des Problems exakt.</p>
+                <div className="absolute -left-[27px] bg-[#4CAF50] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
+                <h4 className="text-xl font-bold text-gray-900 mb-2 ml-6">Inspektion & Ursachenanalyse</h4>
+                <p className="ml-6 text-gray-600">Feuchtigkeitsmessung, Thermografie und optional Raumluft-Sporentest. Wir klären, woher die Feuchtigkeit kommt – ob Leck, Wärmebrücke oder Kondensation.</p>
               </div>
               <div className="relative">
-                <div className="absolute -left-[27px] bg-[#00BCD4] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2 ml-6">Sofortmaßnahmen & Trocknung</h4>
-                <p className="ml-6 text-gray-600">Aufbau der Trocknungssysteme (Seitenkanalverdichter, HEPA-Filter zur Schimmelprävention) und Absaugung von stehendem Wasser.</p>
+                <div className="absolute -left-[27px] bg-[#4CAF50] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
+                <h4 className="text-xl font-bold text-gray-900 mb-2 ml-6">Abschottung & Schutzmaßnahmen</h4>
+                <p className="ml-6 text-gray-600">Der befallene Bereich wird mit Folien abgeschottet, um eine Sporenverbreitung zu verhindern. Wir arbeiten mit HEPA-Luftreinigern und persönlicher Schutzausrüstung.</p>
               </div>
               <div className="relative">
-                <div className="absolute -left-[27px] bg-[#00BCD4] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2 ml-6">Sanierung & Abschluss</h4>
-                <p className="ml-6 text-gray-600">Rückbau der Geräte nach erfolgreicher Kontrollmessung und anschließende Wiederherstellung der Oberflächen.</p>
+                <div className="absolute -left-[27px] bg-[#4CAF50] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
+                <h4 className="text-xl font-bold text-gray-900 mb-2 ml-6">Entfernung & Desinfektion</h4>
+                <p className="ml-6 text-gray-600">Befallene Materialien werden fachgerecht entfernt und die verbleibenden Oberflächen mit speziellen bioziden Mitteln behandelt. Anschließend erfolgt die Trocknung der Ursache.</p>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-[27px] bg-[#4CAF50] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</div>
+                <h4 className="text-xl font-bold text-gray-900 mb-2 ml-6">Kontrollmessung & Prävention</h4>
+                <p className="ml-6 text-gray-600">Nach der Sanierung prüfen wir die Raumluftqualität erneut. Wir beraten Sie zu Lüftungsverhalten, Dämmoptimierung und weiteren Präventionsmaßnahmen.</p>
               </div>
             </div>
 
-            {/* Hyperlocal Intent & Internal Silo Linking */}
+            {/* Internal Silo Linking */}
             <div className="bg-gray-900 text-white p-10 rounded-3xl mt-20 shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 p-12 opacity-5">
-                <MapPin className="w-64 h-64" />
+                <Bug className="w-64 h-64" />
               </div>
               <div className="relative z-10">
                 <h3 className="text-2xl md:text-3xl font-bold mb-6">
-                  Wir sind für Sie da – in Ingolstadt und der gesamten Region!
+                  Schimmel hat oft eine Vorgeschichte – wir kennen sie
                 </h3>
                 <p className="mb-8 text-gray-300">
-                  Unser Hauptstandort in der <strong>Theoderichstraße 8, 85051 Ingolstadt</strong> ermöglicht es uns, 
-                  besonders schnell bei Ihnen zu sein. Ein lokaler Ansprechpartner ist bei 
-                  Wasserschäden Gold wert.
+                  Schimmelbefall entsteht fast immer als Folge eines Feuchteproblems. 
+                  Von der <strong>Leckortung</strong> bis zur <strong>Geruchsneutralisation</strong> nach der Sanierung 
+                  bieten wir alle dazugehörigen Leistungen direkt aus <strong>Ingolstadt</strong>.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-8 border-t border-gray-700 pt-8">
                   <div>
-                    <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Unsere Kernleistungen</h4>
+                    <h4 className="font-bold text-[#00BCD4] mb-4 uppercase tracking-wider text-sm">Verwandte Leistungen</h4>
                     <ul className="space-y-3">
-                      <li><Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung & Diagnose</Link></li>
-                      <li><Link to="/wasserschadensanierung/schimmelsanierung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Schimmelentfernung</Link></li>
-                      <li><Link to="/bautrocknung/estrichtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Estrichtrocknung</Link></li>
-                      <li><Link to="/bautrocknung/neubautrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Neubautrocknung</Link></li>
+                      <li><Link to="/wasserschadensanierung/leckortung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Leckortung</Link></li>
+                      <li><Link to="/wasserschadensanierung/geruchsneutralisation" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Geruchsneutralisation</Link></li>
+                      <li><Link to="/bautrocknung/wandtrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Wandtrocknung</Link></li>
+                      <li><Link to="/bautrocknung/daemmschichttrocknung" className="text-gray-300 hover:text-white hover:underline transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-[#00BCD4] rounded-full mr-2"></span> Dämmschichttrocknung</Link></li>
                     </ul>
                   </div>
                   <div>
@@ -162,20 +178,19 @@ const SchimmelsanierungPage = () => {
             </div>
 
             {/* FAQs */}
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 mt-20">Häufig gestellte Fragen (FAQ) zur Schimmelsanierung</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 mt-20">FAQ – Schimmelsanierung</h2>
             <div className="space-y-6">
-
               <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Wie lange dauert eine professionelle Schimmelsanierung?</h3>
-                <p className="text-gray-600">Abhängig von der Durchfeuchtung und den Materialien dauert eine Schimmelsanierung in der Regel zwischen 10 und 21 Tagen. Wir überwachen den Prozess engmaschig mit Feuchtigkeitsmessungen.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Ist Schimmel in der Wohnung gefährlich?</h3>
+                <p className="text-gray-600">Ja, insbesondere bei längerem Kontakt. Schimmelsporen können Atemwegsinfekte, Allergien und Asthma auslösen. Besonders gefährdet sind Kinder, ältere Menschen und Personen mit geschwächtem Immunsystem. Bei sichtbarem Befall sollte immer zeitnah gehandelt werden.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Übernimmt die Versicherung die Kosten für Schimmelsanierung?</h3>
-                <p className="text-gray-600">Bei Leitungswasserschäden greift meist die Gebäudeversicherung (für fest verbundene Teile) oder die Hausratversicherung (für bewegliche Einrichtung). Wir unterstützen Sie gerne bei der Dokumentation und direkten Abrechnung.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Kann ich Schimmel selbst entfernen?</h3>
+                <p className="text-gray-600">Kleine Flächen unter 0,5 m² können laut Umweltbundesamt mit 70%igem Ethanol selbst behandelt werden. Bei größerem Befall, verdecktem Schimmel oder unklarer Ursache sollten Sie unbedingt einen Fachbetrieb beauftragen, um Gesundheitsrisiken und Sporenverbreitung zu vermeiden.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Können die Räume während der Schimmelsanierung bewohnt werden?</h3>
-                <p className="text-gray-600">Ja, unsere modernen Trocknungsgeräte laufen relativ leise und sind zum Teil mit HEPA-Filtern ausgestattet, um die Raumluftqualität zu erhalten. Einschränkungen gibt es natürlich im direkten Schadensbereich.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Wer trägt die Kosten für eine Schimmelsanierung?</h3>
+                <p className="text-gray-600">Wenn der Schimmel durch einen Wasserschaden verursacht wurde, übernimmt in der Regel die Gebäudeversicherung die Kosten. Bei baulichen Mängeln ist der Eigentümer zuständig. Mieter haben Anspruch auf Mängelbeseitigung durch den Vermieter, sofern kein eigenes Fehlverhalten vorliegt.</p>
               </div>
             </div>
 
