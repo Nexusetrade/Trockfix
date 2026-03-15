@@ -100,8 +100,19 @@ const Footer = () => {
               <div className="flex items-start gap-2 pt-2">
                 <Clock className="w-4 h-4 text-[#00BCD4] mt-0.5 shrink-0" />
                 <div className="text-gray-300 text-sm">
-                  <p className="font-semibold text-white mb-1">Öffnungszeiten</p>
-                  <p>Mo - So: 24/7 geöffnet<br/><span className="text-[#00BCD4]">Notdienst rund um die Uhr</span></p>
+                  <p className="font-semibold text-white mb-2">Öffnungszeiten</p>
+                  <table className="text-gray-300 text-sm w-full">
+                     <tbody>
+                        <tr><td className="py-0.5 pr-4">Montag</td><td>24 Stunden geöffnet</td></tr>
+                        <tr><td className="py-0.5 pr-4">Dienstag</td><td>24 Stunden geöffnet</td></tr>
+                        <tr><td className="py-0.5 pr-4">Mittwoch</td><td>24 Stunden geöffnet</td></tr>
+                        <tr><td className="py-0.5 pr-4">Donnerstag</td><td>24 Stunden geöffnet</td></tr>
+                        <tr><td className="py-0.5 pr-4">Freitag</td><td>24 Stunden geöffnet</td></tr>
+                        <tr><td className="py-0.5 pr-4">Samstag</td><td>24 Stunden geöffnet</td></tr>
+                        <tr><td className="py-0.5 pr-4">Sonntag</td><td>24 Stunden geöffnet</td></tr>
+                     </tbody>
+                  </table>
+                  <p className="mt-2 text-[#00BCD4] font-medium">Notdienst rund um die Uhr</p>
                 </div>
               </div>
             </div>
