@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import AboutSection from '@/components/AboutSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import HomeSEOSection from '@/components/HomeSEOSection';
 import ContactSection from '@/components/ContactSection';
 
 const HomePage = () => {
@@ -33,6 +34,7 @@ const HomePage = () => {
       <ServicesSection />
       <AboutSection />
       <TestimonialsSection />
+      <HomeSEOSection />
       <ContactSection />
     </>
   );

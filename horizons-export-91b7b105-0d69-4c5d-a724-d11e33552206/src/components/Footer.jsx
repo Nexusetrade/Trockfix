@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, ExternalLink, Settings, Shield, ChevronRight } from 'lucide-react';
+import { Phone, Mail, MapPin, ExternalLink, Settings, Shield, ChevronRight, Clock } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCookie } from '@/contexts/CookieContext';
 
@@ -95,6 +95,14 @@ const Footer = () => {
                 <a href="mailto:info@trockfix.de" className="text-gray-300 text-sm hover:text-[#00BCD4] transition-colors">
                   info@trockfix.de
                 </a>
+              </div>
+
+              <div className="flex items-start gap-2 pt-2">
+                <Clock className="w-4 h-4 text-[#00BCD4] mt-0.5 shrink-0" />
+                <div className="text-gray-300 text-sm">
+                  <p className="font-semibold text-white mb-1">Öffnungszeiten</p>
+                  <p>Mo - So: 24/7 geöffnet<br/><span className="text-[#00BCD4]">Notdienst rund um die Uhr</span></p>
+                </div>
               </div>
             </div>
 
